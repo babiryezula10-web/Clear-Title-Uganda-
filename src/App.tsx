@@ -41,6 +41,7 @@ import { LearnCentreView } from './components/LearnCentreView';
 import { TransactionTimelineView } from './components/TransactionTimelineView';
 import { HelpSupportModal } from './components/HelpSupportModal';
 import { GlobalSearchModal } from './components/GlobalSearchModal';
+import formalAppIcon from './assets/images/formal_ctu_icon_1790180602124.jpg';
 import cadastralSurveyIcon from './assets/images/cadastral_survey_watermark_1790089443239.jpg';
 import {
   MessageSquare,
@@ -469,14 +470,15 @@ export default function App() {
               </button>
 
               <div className="flex items-center gap-2.5">
-                {/* Custom App Icon from the user's authentic Cadastral Survey Watermark */}
-                <div className="relative w-8 h-8 rounded-lg overflow-hidden border-2 border-amber-400 shadow-2xs shrink-0 bg-slate-900">
+                {/* Official Formal Clear Title Uganda Emblem */}
+                <div className="relative w-9 h-9 rounded-xl overflow-hidden border-2 border-amber-400 shadow-xs shrink-0 bg-[#0b1e36]">
                   <img
-                    src={cadastralSurveyIcon}
+                    src={formalAppIcon}
                     alt="CLEAR TITLE UGANDA"
                     className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-blue-950/20" />
+                  <div className="absolute inset-0 ring-1 ring-amber-400/40 rounded-xl pointer-events-none" />
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="font-black text-sm sm:text-base text-[#0b1e36] uppercase tracking-wider">

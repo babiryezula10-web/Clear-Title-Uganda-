@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import formalAppIcon from '../assets/images/formal_ctu_icon_1790180602124.jpg';
 import cadastralSurveyIcon from '../assets/images/cadastral_survey_watermark_1790089443239.jpg';
 import {
   ShieldCheck,
@@ -95,15 +96,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
           onClick={() => handleNavClick('welcome')}
           className="flex items-center gap-3 text-left group cursor-pointer"
         >
-          {/* Custom App Icon from the user's authentic Cadastral Survey Watermark */}
-          <div className="relative w-11 h-11 rounded-xl overflow-hidden border-2 border-amber-400 shadow-md shadow-blue-950/70 shrink-0 group-hover:scale-105 transition duration-300 bg-slate-900">
+          {/* Official Formal Clear Title Uganda Emblem */}
+          <div className="relative w-11 h-11 rounded-xl overflow-hidden border-2 border-amber-400 shadow-md shadow-blue-950/70 shrink-0 group-hover:scale-105 transition duration-300 bg-[#0b1e36]">
             <img
-              src={cadastralSurveyIcon}
+              src={formalAppIcon}
               alt="CLEAR TITLE UGANDA"
               className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
             />
-            <div className="absolute inset-0 bg-blue-950/20" />
-            <div className="absolute bottom-0 inset-x-0 h-1 bg-amber-400" />
+            <div className="absolute inset-0 ring-1 ring-amber-400/40 rounded-xl pointer-events-none" />
           </div>
           <div>
             <div className="flex items-center gap-1.5">

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import propertyLandscape from '../assets/images/verdant_estate_watermark_1790089492569.jpg';
+import formalAppIcon from '../assets/images/formal_ctu_icon_1790180602124.jpg';
 import cadastralDeed from '../assets/images/cadastral_survey_watermark_1790089443239.jpg';
 import blueprintScan from '../assets/images/blueprint_plan_watermark_1790089462834.jpg';
 import { ShieldCheck, CheckCircle2, FileSearch, ArrowRight } from 'lucide-react';
@@ -118,15 +119,16 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
             </div>
           )}
 
-          {/* Step 2: Certified Shield & Clear Title Uganda Crest */}
+          {/* Step 2: Certified Shield & Official Clear Title Uganda Emblem */}
           {stage === 2 && (
-            <div className="w-24 h-24 rounded-2xl overflow-hidden border-2 border-amber-400 shadow-2xl shadow-amber-500/30 animate-in zoom-in-90 duration-500 relative bg-slate-900">
+            <div className="w-24 h-24 rounded-2xl overflow-hidden border-2 border-amber-400 shadow-2xl shadow-amber-500/40 animate-in zoom-in-90 duration-500 relative bg-[#0b1e36]">
               <img
-                src={cadastralDeed}
-                alt="Clear Title Uganda Crest"
+                src={formalAppIcon}
+                alt="Clear Title Uganda Sovereign Crest"
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-blue-950/20" />
+              <div className="absolute inset-0 ring-1 ring-amber-400/50 rounded-2xl pointer-events-none" />
               <div className="absolute bottom-1 right-1 bg-emerald-500 text-white rounded-full p-0.5 border border-white/80 shadow-xs animate-in zoom-in duration-300">
                 <CheckCircle2 className="w-4 h-4" />
               </div>

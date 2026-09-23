@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import formalAppIcon from '../assets/images/formal_ctu_icon_1790180602124.jpg';
 import {
   X,
   Download,
@@ -71,8 +72,13 @@ export const VerificationReportModal: React.FC<VerificationReportModalProps> = (
         {/* Header */}
         <div className="p-5 sm:p-6 bg-[#0b1e36] text-white flex items-center justify-between border-b border-blue-900/60">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-300">
-              <ShieldCheck className="w-5 h-5" />
+            <div className="relative w-11 h-11 rounded-xl overflow-hidden border border-amber-400/60 shadow-xs shrink-0 bg-[#0b1e36]">
+              <img
+                src={formalAppIcon}
+                alt="Clear Title Uganda Official Seal"
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <div>
               <p className="text-[10px] font-mono tracking-widest uppercase text-amber-400">

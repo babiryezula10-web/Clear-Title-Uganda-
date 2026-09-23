@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import formalAppIcon from '../assets/images/formal_ctu_icon_1790180602124.jpg';
 import {
   ShieldCheck,
   Search,
@@ -66,7 +67,23 @@ export const FormalWelcomePage: React.FC<FormalWelcomePageProps> = ({
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-16 select-none relative z-10">
       {/* 1. Main Welcome Landing Hero */}
-      <section className="text-center max-w-3xl mx-auto space-y-6 pt-4">
+      <section className="text-center max-w-3xl mx-auto space-y-6 pt-2">
+        {/* Formal Institutional Crest Badge */}
+        <div className="flex flex-col items-center justify-center space-y-2.5">
+          <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-3xl overflow-hidden border-2 border-amber-400 shadow-xl shadow-blue-950/20 bg-[#0b1e36] p-0.5 group hover:scale-105 transition duration-300">
+            <img
+              src={formalAppIcon}
+              alt="Clear Title Uganda Sovereign Crest"
+              className="w-full h-full object-cover rounded-2xl"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 ring-1 ring-amber-400/40 rounded-3xl pointer-events-none" />
+          </div>
+          <span className="text-[10px] sm:text-[11px] font-mono tracking-widest uppercase text-slate-500 font-bold">
+            Republic of Uganda • Land Title Integrity & Verification
+          </span>
+        </div>
+
         {/* Core Value Pillar Pills */}
         <div className="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-blue-50/90 border border-blue-200/80 text-blue-950 text-xs font-bold shadow-2xs">
           <span className="flex items-center gap-1 text-blue-800">

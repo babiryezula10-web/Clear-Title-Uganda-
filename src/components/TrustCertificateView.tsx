@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import formalAppIcon from '../assets/images/formal_ctu_icon_1790180602124.jpg';
 import {
   Award,
   ShieldCheck,
@@ -98,10 +99,16 @@ export const TrustCertificateView: React.FC<TrustCertificateViewProps> = ({
 
         {/* Certificate Content */}
         <div className="relative text-center space-y-6">
-          {/* Header Seal */}
+          {/* Official Formal Registry Seal */}
           <div className="flex flex-col items-center justify-center">
-            <div className="w-16 h-16 rounded-full bg-blue-900 text-white flex items-center justify-center shadow-lg border-2 border-blue-300 mb-3">
-              <Award className="w-9 h-9 text-blue-200" />
+            <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-amber-400 shadow-xl shadow-blue-950/20 mb-3 bg-[#0b1e36]">
+              <img
+                src={formalAppIcon}
+                alt="Republic of Uganda Land Title Seal"
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 ring-2 ring-amber-400/40 rounded-full pointer-events-none" />
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-[#0b1e36] tracking-tight uppercase">
               {t.republicOfUganda}
