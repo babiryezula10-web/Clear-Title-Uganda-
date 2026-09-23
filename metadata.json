@@ -1,0 +1,6 @@
+{
+  "name": "CLEAR TITLE UGANDA",
+  "description": "Ugandan land title verification, fraud protection, and escrow platform for local and diaspora property buyers and owners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
